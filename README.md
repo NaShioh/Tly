@@ -1,161 +1,163 @@
-# 🌐 TalentLync — “Tu talento, nuestro enlace”
-
-**TalentLync** es una plataforma digital inclusiva que conecta **personas en busca de empleo (talentos)** con **empresas y anunciadores**, de forma **rápida, moderna y segura**.  
-Su propósito es facilitar la **contratación, formación y promoción profesional**, creando un entorno accesible y colaborativo.
-
----
-
-## 📖 Índice
-
-1. [Descripción general](#-descripción-general)
-2. [Aspectos técnicos principales](#-aspectos-técnicos-principales)
-3. [Funciones principales](#-funciones-principales)
-4. [Diseño y experiencia](#-diseño-y-experiencia)
-5. [Flujos de usuarios](#-flujos-de-usuarios)
-   - [Talento](#talento)
-   - [Empresa](#empresa)
-   - [Anunciante](#anunciante)
-6. [Despliegue y entorno](#-despliegue-y-entorno)
-7. [Evidencia y repositorio](#-evidencia-y-repositorio)
-8. [Control de versiones](#-control-de-versiones)
-9. [Licencia](#-licencia)
-10. [Créditos y contacto](#-créditos-y-contacto)
+# 🧩 TalentLync 2.0  
+Plataforma freemium que conecta **talentos** en búsqueda de oportunidades con **empresas** que necesitan contratar rápido y con confianza.  
+Incluye módulos de **formación, empleos y publicidad segmentada**, integrando analítica, IA emocional y APIs externas.
 
 ---
 
-## 🧠 Descripción general
+## 🚀 Descripción General
 
-**TalentLync** es una plataforma web tipo **freemium**, donde los usuarios pueden:
-- Postular a empleos y cursos (Talentos)
-- Publicar vacantes y contratar (Empresas)
-- Promocionar servicios o formaciones (Anunciantes)
-
-Todo en un entorno **100% en español**, con una interfaz accesible, adaptable y potenciada por herramientas modernas del ecosistema web.
-
-> **Slogan:** “Tu talento, nuestro enlace”
+**TalentLync** es una plataforma digital inclusiva y accesible diseñada para:
+- Facilitar la conexión entre talentos y empresas.
+- Optimizar procesos de contratación con **match inteligente y visibilidad segmentada**.
+- Integrar formación y desarrollo profesional continuo.
+- Permitir publicidad dirigida con planes flexibles.
 
 ---
 
-## ⚙️ Aspectos técnicos principales
+## 🧠 Estructura General del Proyecto
 
-| Elemento | Descripción |
-|-----------|--------------|
-| **Tipo de sistema** | Plataforma Web (no aplicación móvil) |
-| **Lenguaje principal** | Español |
-| **Frontend** | React + Vite + TypeScript |
-| **Estilos** | Tailwind CSS (degradados azul y celeste, tipografía sans-serif) |
-| **Base de datos** | Bolt Database (basada en Supabase/PostgreSQL) |
-| **Autenticación** | Google Sign-In (inicio de sesión con Google) |
-| **Seguridad** | Row Level Security (RLS) activado |
-| **Entorno de desarrollo** | Bolt.new, Cursor, Visual Studio Code |
-| **Despliegue recomendado** | Frontend: Vercel o Netlify / Backend: Supabase |
+### 🔹 Frontend
+- **Frameworks:** React.js / Vue.js  
+- **Estilos:** TailwindCSS  
+- **Visualización:** Chart.js  
+- **Diseño:** Responsive + accesibilidad WAI-ARIA  
+- **Optimización:** Lazy loading, caching selectivo, y estructura modular.  
 
----
-
-## 💼 Funciones principales
-
-### 👤 Talentos
-- Crear perfil profesional y completar progreso (0–100%)
-- Subir CV, agregar habilidades y certificaciones
-- Postular a empleos y cursos
-- Seguir postulaciones y recibir retroalimentación
-- Planes disponibles:
-  - **Free**  
-  - **Pro:** $3.990 CLP/mes  
-  - **Ascenso:** $5.990 CLP/mes  
-
-### 🏢 Empresas
-- Registro empresarial con validación
-- Crear y gestionar vacantes
-- Revisar postulaciones y contactar talentos
-- Métricas y reportes descargables
-- Planes disponibles:
-  - **Free**
-  - **Pyme:** $15.990 CLP/mes  
-  - **Pro:** $25.990 CLP/mes  
-  - **Premium Link:** $45.990 CLP/mes  
-
-### 📢 Anunciadores
-- Crear anuncios individuales o suscribirse a planes mensuales  
-- Integración de anuncios de manera **orgánica** y **no invasiva** dentro del ecosistema TalentLync  
-- Rentabilidad promedio del 15% mediante estrategias de incentivo  
-
-#### Anuncios individuales
-| Tipo | Precio | Duración | Ubicación |
-|------|---------|-----------|------------|
-| **Básico** | $9.900 | 7 días | Feed de vacantes |
-| **Premium** | $17.900 | 14 días | “Servicio recomendado” en perfiles |
-| **Destacado** | $29.900 | 30 días | Dashboard principal |
-
-#### Planes mensuales
-| Plan | Precio | Beneficios principales |
-|------|---------|------------------------|
-| **Starter Ads** | $59.900 CLP/mes | 3 anuncios destacados, segmentación básica, reporte simple |
-| **Pro Ads** | $119.900 CLP/mes | 8 anuncios, segmentación avanzada, logo en “Aliados formativos” |
-| **Premium Ads** | $229.900 CLP/mes | Anuncios ilimitados, IA de afinidad, soporte dedicado |
+### 🔹 Backend
+- **Tecnologías:** Node.js + Express / NestJS o Django  
+- **Base de Datos:** PostgreSQL / MongoDB  
+- **APIs Externas:**  
+  - Google Meet API (entrevistas integradas)  
+  - APIs de formación (Coursera, Udemy, Crehana, SENCE)  
+- **Seguridad:** OWASP ZAP, cifrado JWT, control de roles.  
+- **Hosting y Cloud:** AWS (EC2, RDS, S3)  
 
 ---
 
-## 🎨 Diseño y experiencia
+## 🧭 Flujo del Servicio
 
-- **Colores principales:** Azul `#2563eb`, celeste y blanco  
-- **Tipografía:** Sans-serif moderna  
-- **Diseño:** Limpio, responsivo, y adaptado a móvil y escritorio  
-- **Animaciones:** Suaves y fluidas  
-- **Estructura general:**
-  - Home con secciones de **Empleos** (central) y **Formación**
-  - Dashboards específicos por tipo de usuario
-  - Panel administrativo
-
----
-
-## 🔁 Flujos de usuarios
-
-### 🧩 Talento
-
-1. **Registro e inicio de sesión**
-   - Google o correo electrónico  
-2. **Perfil básico y avanzado**
-   - Experiencia, habilidades, CV, idiomas, logros  
-3. **Exploración**
-   - Feed de empleos y cursos con filtros por área, modalidad y ubicación  
-4. **Postulación**
-   - Sistema de seguimiento y retroalimentación  
-5. **Formación**
-   - Acceso a microcursos (Coursera, SENCE, Crehana)
+1. **Registro inicial** (Talento o Empresa)  
+2. **Creación de perfil personalizado**  
+3. **Acceso a la página de empleos**  
+   - Página **central** del sistema (home principal).  
+   - Filtros avanzados: ubicación, rubro, modalidad, experiencia, nivel salarial.  
+   - Accesible tanto para **talentos** como **empresas premium**.  
+4. **Apartado de formación**  
+   - Cursos, magíster y microcertificaciones.  
+   - Disponible para talentos y empresas premium.  
+5. **Plan de suscripción o publicidad**  
+   - Modelos freemium, premium y anunciadores.  
+6. **Match predictivo y notificaciones automáticas.**
 
 ---
 
-### 🧩 Empresa
+## 📂 Estructura de Archivos y Componentes
 
-1. **Registro y validación de datos**
-   - Razón social, rubro, correo corporativo  
-2. **Publicación de vacantes**
-   - Cargo, requisitos, tipo de contrato, modalidad  
-3. **Gestión**
-   - Filtrado de postulaciones y entrevistas  
-4. **Analítica**
-   - Métricas e informes descargables (PDF o Excel)
+/src
+├── components/
+│ ├── JobBoard/
+│ │ ├── JobFilters.jsx
+│ │ ├── JobCard.jsx
+│ │ └── JobList.jsx
+│ ├── Training/
+│ │ ├── CourseCard.jsx
+│ │ └── CourseList.jsx
+│ └── Shared/
+│ ├── Navbar.jsx
+│ └── Footer.jsx
+├── pages/
+│ ├── Home.jsx
+│ ├── Jobs.jsx
+│ ├── Training.jsx
+│ └── CompanyDashboard.jsx
+├── api/
+│ ├── jobs.js
+│ ├── users.js
+│ └── auth.js
+└── utils/
+├── filters.js
+├── apiClient.js
+└── analytics.js
+
+yaml
+Copiar código
 
 ---
 
-### 🧩 Anunciante
+## 🧩 Evidencia y Avances
 
-1. **Registro simple o empresarial**  
-2. **Creación de anuncio**
-   - Producto, servicio o curso  
-3. **Selección de plan**
-   - Individual o mensual  
-4. **Publicación y métricas**
-   - Vistas, clics, conversiones  
+- **Página de empleos**: centralizada en el Home, con sistema de filtros activo y responsive.  
+- **Apartado de formación**: ya integrado, visible desde la navegación principal.  
+- **Pruebas funcionales**: revisión de endpoints, rendimiento, seguridad y SEO básico.  
+- **Feedback real**: pruebas de aceptación con usuarios iniciales (empresas y talentos).  
 
 ---
 
-## 🚀 Despliegue y entorno
+## 💰 Precios Actualizados (Versión 2.0)
 
-**Frontend**
-- Deploy recomendado: [Vercel](https://vercel.com) o [Netlify](https://www.netlify.com/)
-- Comando de desarrollo:
-  ```bash
-  npm install
-  npm run dev
+### 🧍‍♂️ Planes para Talentos
+
+| Plan | Descripción | Precio Actual | Precio Sugerido Ajustado | Justificación |
+|------|--------------|----------------|-----------------------------|----------------|
+| **Free** | Perfil básico, postulaciones limitadas. | $0 | $0 | Captación de usuarios. |
+| **Pro** | Perfil verificado, más visibilidad y feedback básico. | $3.990 | **$4.990 CLP/mes** | Mejora de margen sin perder accesibilidad. |
+| **Ascenso** | Máxima visibilidad, prioridad en búsquedas, alertas personalizadas. | $5.990 | **$6.990 CLP/mes** | Aumenta valor percibido y posicionamiento premium. |
+
+---
+
+### 🏢 Planes para Empresas
+
+| Plan | Descripción | Precio Actual | Precio Sugerido Ajustado | Justificación |
+|------|--------------|----------------|-----------------------------|----------------|
+| **Free** | Publicación limitada y sin acceso a match inteligente. | $0 | $0 | Estrategia de captación B2B. |
+| **Pyme** | Hasta 5 vacantes, métricas básicas. | $15.990 | **$17.990 CLP/mes** | Mejora de rentabilidad manteniendo accesibilidad. |
+| **Pro** | Filtros avanzados, match inteligente y reportes de contratación. | $25.990 | **$27.990 CLP/mes** | Ajuste competitivo frente a LinkedIn Recruiter. |
+| **Premium Link** | Mayor visibilidad, entrevistas integradas y soporte prioritario. | $45.990 | **$49.990 CLP/mes** | Refuerza percepción de exclusividad. |
+
+---
+
+### 📢 Planes para Anunciadores
+
+| Tipo | Subtipo | Precio Actual | Precio Sugerido | Justificación |
+|------|----------|----------------|-----------------|----------------|
+| **Individual** | Básico | $9.900 | **$10.990 CLP** | Margen de rentabilidad del 15 %. |
+| | Premium | $17.900 | **$19.900 CLP** | Mantiene proporción respecto al básico. |
+| | Destacado | $29.900 | **$32.900 CLP** | Incentiva la migración a planes mensuales. |
+| **Mensual** | Starter Ads | $59.900 | **$64.900 CLP/mes** | Mejora margen sin perder atractivo. |
+| | Pro Ads | $119.900 | **$129.900 CLP/mes** | Cubre gastos técnicos de analítica y soporte. |
+| | Premium Ads | $229.900 | **$239.900 CLP/mes** | Mantiene coherencia premium con la propuesta. |
+
+---
+
+## 📈 Proyección a Corto Plazo
+
+| Mes | Ingresos Estimados | Objetivo |
+|-----|--------------------|-----------|
+| **1** | ≈ $175.000 CLP | Captación inicial y validación de MVP. |
+| **2** | ≈ $389.000 CLP | Activación de planes pagos y feedback. |
+| **3** | ≈ $828.000 CLP | Consolidación del modelo freemium + premium. |
+
+---
+
+## 🛡️ Control de Calidad y Auditoría
+
+**Checklist de Revisión Técnica:**
+- [x] Revisión manual de código y funcionamiento  
+- [x] Rendimiento y optimización general  
+- [x] UX/UI y comportamiento del usuario  
+- [x] Auditoría técnica y SEO  
+- [x] Pruebas y depuración de APIs  
+- [x] Seguridad básica y control de accesos  
+- [x] Experiencia de uso móvil  
+
+---
+
+## 📚 Licencia
+Proyecto desarrollado bajo licencia **MIT**.  
+Desarrollo original por **TalentLync Labs** — 2025.
+
+---
+
+## 📞 Contacto
+**Email:** contacto@talentlync.com  
+**Sitio Web:** 
