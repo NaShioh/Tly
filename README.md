@@ -160,4 +160,5 @@ Desarrollo original por **TalentLync Labs** — 2025.
 
 ## 📞 Contacto
 **Email:** contacto@talentlync.com  
-**Sitio Web:** 
+**Sitio Web:** https://talentlync-2-1-6rzb.bolt.host/
+
